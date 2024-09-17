@@ -1,0 +1,150 @@
+body {
+    font-family: "SUSE", sans-serif;
+    background-color: #444b40;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #E3EBDE;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+    height: 78px; 
+}
+
+.logo img {
+    position: absolute;
+    left: 20px; 
+    width: 150px;
+    height: auto;
+}
+
+.logo p {
+    font-size: 23px;
+    color: #444b40;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: 25px;
+}
+
+@media (max-width: 760px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin: 3px;
+        width: 120px;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    .logo p {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 68px;
+        margin-left: 0;
+    }
+}
+
+h1{
+    margin-left: 32px;
+    margin-top: 30px;
+    color: #e3ebde;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 0 2rem;
+    gap: 1rem; 
+}
+
+.card{
+    color: white;
+    border-radius: 7px;
+    background-color: #777764;
+    padding: 0.8rem;
+    text-align: center;
+    width: 260px;
+    height: 190px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    width: 100%;
+    height: 130px;
+    border-radius: 7px;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid #444b40;
+    background-color: #444b40;
+    color: #e3ebde;
+    padding: 5px 15px; 
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block; 
+    transition: 0.5s;
+    font-size: 16px;
+    margin: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:hover{
+    background-color: transparent;
+    color:#444b40;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+    margin: 30px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: 80px;
+}  
+
+
+
+
+
+
+
+
